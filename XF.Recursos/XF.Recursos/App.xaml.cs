@@ -11,7 +11,8 @@ namespace XF.Recursos
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new Menu.MainPage();
+            
 		}
 
 		protected override void OnStart ()
