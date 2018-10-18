@@ -23,9 +23,24 @@ namespace XF.Recursos.Menu
             menuItems.Add(new OpcoesMenu
             {
                 Descricao = "Home",
-                Icone = "Home.png",
+                Icone = "home.png",
                 TargetType = typeof(HomeView)
             });
+
+            menuItems.Add(new OpcoesMenu
+            {
+                Descricao = "Editor",
+                //Icone = "Home.png",
+                TargetType = typeof(Controles.EditorView)
+            });
+
+            menuItems.Add(new OpcoesMenu
+            {
+                Descricao = "Controle de Data",
+                //Icone = "Home.png",
+                TargetType = typeof(Controles.PickerView)
+            });
+
 
             lstMenu.ItemsSource = menuItems;
         }
